@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+   <title>Form</title>
+</head>
+<body class="body">
+    <div >
+ <form class="form">
+     <table>
+<tr class="design">
+    <td class="fn">
+       First Name:
+    </td>
+    <td>
+<input type="text" name="First Name" maxlength="15" minlength="9">
+    </td>
+</tr>
+<tr class="design">
+    <td>
+       Last Name:
+    </td>
+    <td>
+<input type="text" name="Last Name" maxlength="15" minlength="9">
+    </td>
+</tr>
+<tr class="design">
+    <td>
+        Email Address:
+    </td>
+    <td>
+        <input type="email" name="Email Address"  maxlength="40">
+    </td>
+</tr>
+<tr class="design">
+    <td>
+       Residential Address:
+    </td>
+    <td>
+<input type="text" name="Residential Address" maxlength="40">
+    </td>
+</tr>
+<tr class="design">
+    <td>
+       Phone Number:
+    </td>
+    <td>
+<input type="text" name="Phone Number" maxlength="15" minlength="11">
+    </td>
+</tr>
+<tr>
+    <td>
+    <div>
+    <h3 class="size">Size</h3>
+    <div class="options">
+    <div class="option1"><input type="radio" value="Small" name="Size">Small</div>
+    <div class="option2"><input type="radio" value="Medium" name="Size">Medium</div>
+    <div class="option3"><input type="radio" value="Large" name="Size">Large</div>
+    </div>
+    </div>
+    </td>
+</tr>
+<tr>
+    <td>
+        <h3 class="size">Quantity</h3>
+        <div class="control">
+            <span class="edit-qty minus" onclick="minusQty('qty')">-</span>
+            <input type="number" name="qty" id="qty" min="1" max="999" maxlength="3" value="1" title="Qty" class="input-text qty" data-validate="{&quot;required-number&quot;:true,&quot;validate-item-quantity&quot;:{&quot;minAllowed&quot;:1,&quot;maxAllowed&quot;:10000}}">
+            <span class="edit-qty plus" onclick="plusQty('qty')">+</span>
+        </div>
+    </td>
+</tr>
+<tr>
+    <td>
+    <div>
+    <h3 class="method">Payment Method</h3>
+    <div class="options">
+    <div class="option4"><input type="radio" value="Small" name="Payment Method">Cash On Delivery</div>
+    <div class="option5"><input type="radio" value="By Card" name="Payment Method">By Card</div>
+    </div>
+    </td>
+</tr>
+
+<tr class="design">
+    <td>
+<button type="button" class="btn1 btn-danger"> <a href="done.html">Order Done</button></a>
+</td>
+</tr>
+<div class="alert alert-danger" role="alert">
+    Complete the Info First
+  </div>
+  
+     </table>
+ </form>
+</div>
+    </body>
+</html>
